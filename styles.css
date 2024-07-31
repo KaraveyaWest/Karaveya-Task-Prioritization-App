@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9; /* Adjusted background color to keep it consistent */
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add-task-form, .task-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.add-task-form input, 
+.add-task-form select, 
+.add-task-form button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item[data-priority="1"] { background-color: #ffcccc; }
+.task-item[data-priority="2"] { background-color: #ffebcc; }
+.task-item[data-priority="3"] { background-color: #ffffcc; }
+.task-item[data-priority="4"] { background-color: #e0ffcc; }
+.task-item[data-priority="5"] { background-color: #ccffcc; }
+
+.sortable {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sortable li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd; /* Completed the border property */
+    border-radius: 4px; /* Added border-radius for visual consistency */
+}
